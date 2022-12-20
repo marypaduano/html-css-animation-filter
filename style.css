@@ -123,9 +123,9 @@
     font-size: 60px;
 }
 .ex-11-icon:hover {
-    animation: spinALittleBit 3s;
+    animation: spin 3s;
 }
-@keyframes spinALittleBit {
+@keyframes spin {
     0% {
         transform: rotate(2);
     }
@@ -169,9 +169,9 @@
     height: 20px;
 }
 .ex-12-button:hover .ex-12-top-white {
-    animation: moveTopWhite 5s;
+    animation: movetop 5s;
 }
-@keyframes moveTopWhite {
+@keyframes movetop {
     0% {
         left: 30%;
     }
@@ -183,9 +183,9 @@
     }
 }
 .ex-12-button:hover .ex-12-bottom-white {
-    animation: moveBottomWhite 5s;
+    animation: movebottom 5s;
 }
-@keyframes moveBottomWhite {
+@keyframes movebottom {
     0% {
         left: 20%;
     }
@@ -194,5 +194,28 @@
     }
     100% {
         left: 30%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: movetop 5s ;
+}
+@keyframes movetop {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: move360 5s;
+}
+@keyframes move360 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
     }
 }
