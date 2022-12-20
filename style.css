@@ -103,14 +103,42 @@
 }
 
 
-
-
+/*ex10 ***************************** */
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+
+/*ex11 ***************************** */
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover {
+    animation: spinALittleBit 3s;
+}
+@keyframes spinALittleBit {
+    0% {
+        transform: rotate(2);
+    }
+    50% {
+        transform: rotate(275deg);
+    }
+    100% {
+        transform: rotate(3);
+    }
+}
+
+
+/*ex12-13 ***************************** */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
